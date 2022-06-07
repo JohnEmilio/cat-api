@@ -1,8 +1,10 @@
 const { json } = require('express');
 const express = require('express');
 const app = express();
+const cors = require('cors')
 const PORT = 8000
 
+app.use(cors)
 let cats = {
     'maine coon':{
         'breed': 'Maine Coon',
